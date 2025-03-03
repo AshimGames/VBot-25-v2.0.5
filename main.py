@@ -1,79 +1,83 @@
 import random
 import time
 
-#-----------------------------------------------------------------------------------------------
-
-#начинаю писать ОС
+#VBot Simple OS 
 time.sleep(1)
-print('Добро пожаловать! загрузка драйвера VBot...')
+print('Starting DDOs')
+time.sleep(2)
+print('VBot file exeption started')
 time.sleep(1)
-for i in range(21):
-    print(i)
-    time.sleep(0.5)
+print('Importing Vbot32X')
+time.sleep(0.6) 
+print('Importing VBot64X')
+time.sleep(0.7)
+print('OS Has been started!')
 time.sleep(1)
-print('Идет загрузка ОС, пожалуйста подожите...')
-time.sleep(5)
-print('Загрузка завершена!')
+print("|||| ||||")
+print("|||| ||||")
+print("|||| ||||")
+print("|||| ||||")
+print("  |||||  ")
 time.sleep(1)
-print('Загруззка VBot завершена!')
-login = input('Введите ваше имя: ')
-if login == 'TRS':
-    print('Здраствуйте создатель!')
-    cmd = input('Какую команду вы выберете?: console')
-    if cmd == "console":
-        print('Консоль VbotOS запущена!')
-if login == login:
-    print('Здравсвуйте', login, "!")
-    while True:  # Бесконечный цс 15 до 53
+while True:  # Бесконечный цс 15 до 53
         command = input(
-            'Введите команду если команды НЕ знаете напишите help: ')
-        if command == 'Квест':
-            print('ОЙ... Ошибочка Сдесь ведуться дорожные работы:/')
-        elif command == 'Настройки':
-            print('Здравствуйте!')
-            time.sleep(1)
-            cc = input('Сколько fps должно быть у вашей ОС?: ')
-            print(cc, 'отлично!')
-        elif command == 'Профиль':
-            print('Здравствуйте! Ваш профиль: ', login, ('!'))
-        elif command == 'help':
-            print(
-                'Вот список команд: Квест, Настройки, Профиль, inf, help, Проекты,'
-            )
-        elif command == 'Проекты':
-            print('Вот список проектов: VBotOS')
-        elif command == 'Выход':
-            print('Вы вышли из VBotOS')
-        elif command == 'ПTS':
-            print(
-                'Вот список проектов Truss Studio: VBotOS, Wundios 11 beta, 2D platformer 200+'
-            )
-        elif command == 'inf':
-            print(
-                'Об этой ОС! имя ОС: VBotOS, версия: pro 1.5.90, разработчик: Truss Studio'
-            )
-            print('Создатель Truss Studio: Михаил Бровин')
-        elif command == 'Обновы':
-            print(
-                'Обновления: 1.0.0 поект был создан, 1.0.1: добавлена команда Профиль...'
-            )
-            print(
-                '1.5.82 BETA добавлена команада inf, 1.5.90 добавлена команда Проекты'
-            )
-        elif command == 'VBOT DRIVER INF':
-            print('Версия VBotOS DRIVER: 1.98.54.67.56')
-        elif command == 'Выкл':
-            print('Вы выключили VBotOS')
-            break
-        elif command == 'Рандом сила и герой':
-            heroes = ['Бэтмен','Соник','Супермен']
-            power = ['Деньги','Скорость','Сила']
-
-            print(random.choice(heroes))
-            print(random.choice(power))
-        elif command == 'Рандом число':
-            print(random.randint(1, 100))
-        elif command == 'Рандом число 2':
-            print('Эта функция не доступна')
+            'Введите команду или настройку, если команды не знаете напишите help: ')
+        if command == 'help':
+           print("Список команд:")
+           print("Settings")
+           print("Site")
+           print("info")
+           print("DDOs -- включить/выключить DDOs защиту")
+           print("eula")
+           print("For Creators") 
+        elif command == 'Settings':
+            print('<---НАСТРОЙКИ--->')
+            print(' Настройки сети..,')
+            print(' Защита..,')
+            print(' Персональные данные..,')
+            print('<-----СКОРО----->')
+        elif command == 'Сеть':
+            print('<---НАСТРОЙКИ СЕТИ--->')
+            print('Установка соидения невозможна на данный момент')
+        elif command == 'Защита':
+            print('<---ЗАЩИТА--->')
+            print('DDOs.., для выключения напишите команду DDOs off')
+            print('Для включения напишите команду DDOs on')
+        elif command == 'DDOoff':
+            print('Защита DDOs успешно выключена!')
+        elif command == 'DDOon':
+            print('Защита DDOs успешно включена!')
+        elif command == 'Персона':
+            print('<---ДАННЫЕ ПОЛЬЗОВАТЕЛЯ--->')
+            login = input('Введите ваше имя: ')
+            if login == login:
+                print(login, 'Добро пожаловать в VBot 25! Ваши данные сохранены!')
+        elif command == 'Info':
+            print("|||| ||||   |||||||||")
+            print("|||| ||||   ||       |")
+            print("|||| ||||   ||||||||||")
+            print("|||| ||||   ||       |")
+            print("  |||||     |||||||||")
+            time.sleep(3)
+            print('Информацио о VBot:')
+            print('VBot начал создаватся в 2024 году,')
+            print('его создает 1 человек,')
+            print('он надеется что когда-то этот бот станет популярным!')
+        elif command == 'Site':
+            print('error A94 socured. В разработке...')
+            print('       ||||| |||||')
+            print('       ||||| |||||')
+            print('          .....   ')
+            print("         |||||||  ")
+            print('       ||||   ||||') 
+        elif command == 'eula':
+            print('We are using eula protection, if you want to use it type eula=true')
+        elif command == 'eula=true':
+            print('Eula is active now!')          
         else:
-            print('Не знаю такой команды:/')
+            print('error A81 socured: Такой команды не существует.')
+            print('       ||||| |||||')
+            print('       ||||| |||||')
+            print('          .....  ')
+            print("         |||||||")
+            print('       ||||   |||| ')
