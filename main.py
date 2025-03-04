@@ -30,6 +30,7 @@ while True:  # Бесконечный цс 15 до 53
            print("DDOs -- включить/выключить DDOs защиту")
            print("eula")
            print("For Creators") 
+           print("Translator")
         elif command == 'Settings':
             print('<---НАСТРОЙКИ--->')
             print(' Настройки сети..,')
@@ -73,7 +74,39 @@ while True:  # Бесконечный цс 15 до 53
         elif command == 'eula':
             print('We are using eula protection, if you want to use it type eula=true')
         elif command == 'eula=true':
-            print('Eula is active now!')          
+            print('Eula is active now!')       
+        elif command == 'Переводчик':
+            print('error A94 socured. В разработке...')
+            print('       ||||| |||||')
+            print('       ||||| |||||')
+            print('          .....   ')
+            print("         |||||||  ")
+            print('       ||||   ||||') 
+            #eng_words = ['Hi','Bye','Task', 'Programm']
+            #ru_words = ['Привет','Пока','Задача', 'Программа']
+            #score = 0
+
+            #mod = input("Выбери режим работы тренажера: 0 - добавить новые слова, 1 - тренироваться: \n")
+            #while ((mod != '0') and (mod != '1')):
+                #mod = input("Недопустимый символ! Выбери 0 или 1. (0 - добавить новые слова, 1 - тренироваться) \n")
+
+            #if mod == "1":
+                #print("Переведи как можно больше слов правильно! У тебя 10 попыток!")
+                #for i in range(10):
+                    #number = random.randint(0, len(eng_words))
+                    #print("Как переводится слово: "+eng_words[number])
+                    #if input() == ru_words[number]:
+                        #print("Отлично!!!")
+                        #score += 1
+                    #else:
+                        #print("Нет... Это слово - " + ru_words[number])
+            #else:
+                #word = input("Введите слово на русском языке: ")
+                #translate = input("Введите перевод этого слова: ")
+                #if len(word) > 0 and len(translate) > 0:
+                    #ru_words.append(word)
+                    #eng_words.append(translate)
+                    #print("Слово успешно добавлено!")   
         else:
             print('error A81 socured: Такой команды не существует.')
             print('       ||||| |||||')
@@ -81,3 +114,4 @@ while True:  # Бесконечный цс 15 до 53
             print('          .....  ')
             print("         |||||||")
             print('       ||||   |||| ')
+
